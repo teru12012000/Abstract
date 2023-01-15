@@ -1,0 +1,388 @@
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.5.1)  15 JAN 2023 00:27
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**c:/Users/sion0/OneDrive/デスクトップ/卒業研究/抄録/4619060_照永詩恩_池辺研究室
+(c:/Users/sion0/OneDrive/デスクトップ/卒業研究/抄録/4619060_照永詩恩_池辺研究室.tex
+pLaTeX2e <2020-04-12> (based on LaTeX2e <2020-02-02> patch level 5)
+L3 programming layer <2020-04-06> (c:/texlive/2020/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2020/01/03 v1.8e Standard pLaTeX class
+\c@@paper=\count166
+(c:/texlive/2020/texmf-dist/tex/platex/base/jsize12.clo
+File: jsize12.clo 2020/01/03 v1.8e Standard pLaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 615.
+\toclineskip=\dimen150
+\@lnumwidth=\dimen151
+\bibindent=\dimen152
+\heisei=\count175
+) (c:/texlive/2020/texmf-dist/tex/latex/here/here.sty) (c:/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count176
+\float@exts=\toks16
+\float@box=\box61
+\@float@everytoks=\toks17
+\@floatcapt=\box62
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 105.
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+) (c:/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count177
+\LTcapwidth=\dimen155
+\LT@head=\box63
+\LT@firsthead=\box64
+\LT@foot=\box65
+\LT@lastfoot=\box66
+\LT@cols=\count178
+\LT@rows=\count179
+\c@LT@tables=\count180
+\c@LT@chunks=\count181
+\LT@p@ftn=\toks19
+) (c:/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box67
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen156
+\ttl@minus=\dimen157
+\ttl@toksa=\toks20
+\titlewidth=\dimen158
+\titlewidthlast=\dimen159
+\titlewidthfirst=\dimen160
+) (c:/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count182
+\mult@box=\box68
+\multicol@leftmargin=\dimen161
+\c@unbalance=\count183
+\c@collectmore=\count184
+\doublecol@number=\count185
+\multicoltolerance=\count186
+\multicolpretolerance=\count187
+\full@width=\dimen162
+\page@free=\dimen163
+\premulticols=\dimen164
+\postmulticols=\dimen165
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box69
+\last@line=\box70
+\maxbalancingoverflow=\dimen166
+\mult@rightbox=\box71
+\mult@grightbox=\box72
+\mult@gfirstbox=\box73
+\mult@firstbox=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\c@minrows=\count188
+\c@columnbadness=\count189
+\c@finalcolumnbadness=\count190
+\last@try=\dimen167
+\multicolovershoot=\dimen168
+\multicolundershoot=\dimen169
+\mult@nat@firstbox=\box112
+\colbreak@box=\box113
+\mc@col@check@num=\count191
+) (c:/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count192
+\Gm@cntv=\count193
+\c@Gm@tempcnt=\count194
+\Gm@bindingoffset=\dimen170
+\Gm@wd@mp=\dimen171
+\Gm@odd@mp=\dimen172
+\Gm@even@mp=\dimen173
+\Gm@layoutwidth=\dimen174
+\Gm@layoutheight=\dimen175
+\Gm@layouthoffset=\dimen176
+\Gm@layoutvoffset=\dimen177
+\Gm@dimlist=\toks21
+) (c:/texlive/2020/texmf-dist/tex/latex/carlisle/remreset.sty
+
+Package remreset Warning: The remreset package is obsolete:
+(remreset)                \@removefomresset is defined.
+
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip57
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks22
+\ex@=\dimen178
+)) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen179
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box114
+\strutbox@=\box115
+\big@size=\dimen180
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
+\dotsspace@=\muskip16
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
+\tag@help=\toks23
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
+\andhelp@=\toks24
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks25
+\multlinegap=\skip58
+\multlinetaggap=\skip59
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count273
+\lst@gtempboxa=\box116
+\lst@token=\toks27
+\lst@length=\count274
+\lst@currlwidth=\dimen187
+\lst@column=\count275
+\lst@pos=\count276
+\lst@lostspace=\dimen188
+\lst@width=\dimen189
+\lst@newlines=\count277
+\lst@lineno=\count278
+\lst@maxwidth=\dimen190
+ (c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count279
+\lst@skipnumbers=\count280
+\lst@framebox=\box117
+) (c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (c:/texlive/2020/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count281
+\c@ALG@rem=\count282
+\c@ALG@nested=\count283
+\ALG@tlm=\skip60
+\ALG@thistlm=\skip61
+\c@ALG@Lnr=\count284
+\c@ALG@blocknr=\count285
+\c@ALG@storecount=\count286
+\c@ALG@tmpcounter=\count287
+\ALG@tmplength=\skip62
+) (c:/texlive/2020/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+\@float@every@algorithm=\toks28
+\c@algorithm=\count288
+) (c:/texlive/2020/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (c:/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen191
+\WF@size=\dimen192
+\c@WF@wrappedlines=\count289
+\WF@box=\box118
+\WF@everypar=\toks29
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
+\l__pdf_internal_box=\box119
+\g__pdf_backend_object_int=\count290
+\l__pdf_backend_content_box=\box120
+\l__pdf_backend_model_box=\box121
+\g__pdf_backend_annotation_int=\count291
+\g__pdf_backend_link_int=\count292
+\g__pdf_backend_link_sf_int=\count293
+) (./4619060_照永詩恩_池辺研究室.aux)
+\openout1 = `4619060_照永詩恩_池辺研究室.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 702.78308pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=702.78308pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=9.33105pt
+* \footskip=30.0pt
+* \marginparwidth=83.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count294
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 37.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 37.
+[1
+
+] [2]
+Overfull \vbox (21.14635pt too high) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+[] \JY1/mc/m/n/12 「 フ ィ ッ トネス ー疲労モデル 」 を用いたトレ ーニング刺激と生体応答の
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+\JY1/mc/m/n/12 モニタリングとパフ ォ ーマンス予測 ， \OT1/cmr/m/n/12 URL(https://system5-site-one.ssl-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+\OT1/cmr/m/n/12 link.jp/sandcplanning/uploads/solution/20/5b14a2d1f169020.pdf), \JY1/mc/m/n/12 閲覧日 \OT1/cmr/m/n/12 2023 \JY1/mc/m/n/12 年 \OT1/cmr/m/n/12 1
+ []
+
+[4] (./4619060_照永詩恩_池辺研究室.aux) ) 
+Here is how much of TeX's memory you used:
+ 4501 strings out of 481193
+ 62117 string characters out of 5921218
+ 337764 words of memory out of 5000000
+ 20457 multiletter control sequences out of 15000+600000
+ 541573 words of font info for 60 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 30i,7n,36p,322b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on 4619060_照永詩恩_池辺研究室.dvi (4 pages, 20676 bytes).

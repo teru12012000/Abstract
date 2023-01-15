@@ -1,0 +1,43 @@
+\documentclass[uplatex, 11pt, a4paper]{jsarticle}
+
+% 抄録 空白 左右2㎝，上2㎝，下3 ㎝
+\usepackage[top=20truemm,bottom=30truemm,left=20truemm,right=20truemm]{geometry}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bmpsize}
+\usepackage{url}
+\usepackage{float}
+\usepackage{here}
+\usepackage{booktabs}
+\usepackage{multicol}
+% \usepackage{algorithm,algorithmic}
+
+\begin{document}
+\pagestyle{empty}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage\null
+  \begin{center}%
+    \let\footnote\thanks
+    {\LARGE \@title \par}%
+    \vskip 0.0em
+    {\large
+    \lineskip .1em
+    \begin{tabular}[t]{c}%
+      \@author
+    \end{tabular}\par}%
+  \end{center}%
+  \par\vskip 0.0em
+  \ifvoid\@abstractbox\else\centerline{\box\@abstractbox}\vskip0.5em\fi
+}
+\makeatother
+
+\title{卒論タイトル卒論タイトル卒論タイトル}
+\maketitle
+\rightline{\author{氏名 ( 准教授,  助教授)}}
+
+\end{document}

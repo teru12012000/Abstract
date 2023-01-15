@@ -1,0 +1,210 @@
+\documentclass[12pt]{jarticle}
+\usepackage{Here}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{longtable}
+\usepackage{titlesec}
+\usepackage{multicol}
+\pagestyle{empty}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\usepackage[top=20truemm,bottom=30truemm,left=20truemm,right=20truemm]{geometry}
+\usepackage{multicol}
+\usepackage{remreset}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{wrapfig}
+%\usepackage[jis2004]{otf}
+\makeatletter
+\newenvironment{tablehere}
+  {\def\@captype{table}}
+  {}
+\newenvironment{figurehere}
+  {\def\@captype{figure}}
+  {}
+\makeatother
+\usepackage[top=20truemm,bottom=30truemm,left=20truemm,right=20truemm]{geometry}
+\begin{document}
+
+\begin{center}
+  \LARGE{陸上競技の長距離種目における\\最適な練習組合せ}
+\end{center}
+\begin{flushright}
+  照永　詩恩(池辺　淑子准教授,西田　優樹助教)
+\end{flushright}
+\section{はじめに}
+今日，学生や一般市民が多くのスポーツ競技に参加している．その中で経験豊富な指導者の指導が受けられる人は少ない．
+経験豊富な指導者の指導が受けられない場合は，本人自らが練習メニューを決めなければならない
+一方で試合で良い結果を出すためには，適切な量と質の練習を行う必要がある．一般的には，強度が高い練習を継続していくほど
+疲労は蓄積し，試合で満足のいく結果が出せなくなってしまう．逆に，強度の低い練習ばかり実施したり
+全く練習をしなかったりすると競技力の不足により同じく試合で満足のいく結果が出せなくなる．
+このようにトレーニングメニューの調整をするのが容易ではない．トレーニングに関する理論として1970年から1990年代にかけてBanisterを中心とした研究グループによって
+フィットネス，疲労，パフォーマンスを数理モデル化したフィットネス疲労理論というものが存在する\cite{bani}．
+本研究では，陸上競技の長距離種目を例にフィットネス疲労理論\cite{bani}を用いて最適なトレーニングメニューの作成を定式化する．
+\section{フィットネス疲労理論}
+フィットネス疲労理論\cite{bani}は，トレーニングをすると
+身体にプラスなフィットネスと身体にマイナスな疲労の2要素が引き起こされ両者の和を
+とるとパフォーマンスが算出されるという考え方に基づく理論である．数式で表すと時刻$t$において投与されたインプット$w(t)$のトレーニング負荷は，
+正の効果をもたらすフィットネス$g(t)$と，負の効果をもたらす疲労$h(t)$が
+拮抗して生体応答を引き起こし，両者の和としてパフォーメンス$p(t)$
+がアウトプットされるというものである．時刻$t$におけるトレーニング負荷関数$w(t)$は競技によって異なるが，フィットネスと疲労
+を表す関数$g(t)，h(t)，p(t)$は以下のとおりである．
+\begin{eqnarray}
+  g(t)&=&w(t)+g(t-i)e^{-\frac{1}{\tau_1}}\label{eq:fit1}\\%(2)
+  h(t)&=&w(t)+h(t-i)e^{-\frac{1}{\tau_2}}\label{eq:fig1}\\%(3)
+  p(t)&=&k_1g(t)-k_2h(t)\label{eq:per1}%(4)
+\end{eqnarray}
+ここで，$\tau_1$，$\tau_2$はそれぞれフィットネスと
+疲労の時定数でありBanisterが1991年に$\tau_1=45$，$\tau_2=15$に設定すべきと提唱している\cite{fitfig}．添字$i$は$t$の前のトレーニング時刻であり
+通常は1日単位で考えるので$i=1$である．関数$p(t)$に現れる$k_1$,$k_2$はそれぞれの重みづけ任意係数であり，こちらも時定数同様Banisterがそれぞれ
+$k_1=1.0$，$k_2=2.0$に設定することを提唱している\cite{fitfig}．また，トレーニング負荷$w(t)$の算出方法はいくつかあるが本研究では，
+対象を陸上競技長距離種目とし以下のものとする．
+\begin{eqnarray}
+  w(t)&=&ランニング強度(au)\times 距離(km)\times 路面係数\times 天候係数\label{eq:w1}%(5)
+\end{eqnarray}
+ランニング強度は1kmあたりのペースによって値が定まり，速ければ速いほど値は大きくなる．路面係数は走る路面(トラック，ロード，グラウンド)によってそれぞれ値が定められている．
+天候係数は晴か雨なのか，また暑いのか涼しいのかによって値が定まるものである．これらの値については文献\cite{fitfig1}に記載されていたものを利用している．
+\section{定式化}
+陸上競技長距離種目における，トレーニングメニュー作成問題を最適化問題として，
+定式化する．そのためにフィットネス，疲労，パフォーマンスを表す関数$g(t)$，$h(t)$，$p(t)$を具体的に記述する．
+\begin{eqnarray}
+  g(t)&=&\sum_{i=1}^t w(i)e^{-\frac{t-i}{45}}\label{eq:fit2}\\%(6)
+  h(t)&=&\sum_{i=1}^t w(i)e^{-\frac{t-i}{15}}\label{eq:fig2}\\%(7)
+  p(t)&=&g(t)-2h(t)\label{eq:per2}%(8)
+\end{eqnarray}
+定式化においては，トレーニング期間を全体で$T$日とし，あらかじめ定める$K$種類のメニューの中から各日1つを選択するものとする．
+定式化においては$i$日目の第$j$メニューについて，
+\begin{eqnarray}
+  A_{ij}&：&i日目における第jメニューのランニング強度\nonumber\\
+  R_{ij}&：&i日目における第jメニューの路面係数\nonumber\\
+  W_{ij}&：&i日目における第jメニューの天候係数\nonumber
+\end{eqnarray}
+を定数にする．天候係数については雨は考えず，晴のみとし気温については季節に応じて決定する．
+そして変数を，
+\begin{eqnarray}
+  x_{ij}&：&i日目における第jメニューを実施するか否か(バイナリ変数)\nonumber\\
+  D_{ij}&：&i日目のおける第jメニューの距離(整数値)\nonumber
+\end{eqnarray}
+と設定すると，これらを用いてトレーニング作成問題は以下のように定式化できる．
+\begin{eqnarray}
+  \mathop{\rm maximize}&\ \ &\sum_{i=1}^T (\sum_{j=1}^K A_{ij}D_{ij}R_{ij}W_{ij}x_{ij})e^{-\frac{T-i}{45}}\label{eq:max}\\%(10)
+  \mathop{\rm subject\ to}&\ \ &\sum_{j=1}^K x_{ij}\leq 1\ \ (i=1,\cdots , T)\label{eq:st1}\\%(11)
+  &&p(i)\geq P\ \ (i=i_1,\cdots , i_s)\label{eq:st3}%(13)
+\end{eqnarray}
+目的関数(\ref{eq:max})式はフィットネスの最大化である．
+(\ref{eq:st1})式は，各トレーニング日に高々1つのメニューを実施すること，
+(\ref{eq:st3})式は特定の$i_k$日目にパフォーマンスがあらかじめ定める定数$P$より下がらないこととしている．
+
+
+\section{数値実験}
+\subsection{設定と定式化}
+数値実験では，2022年12月5日に開催された試合に向けた11月21日から12月4日のトレーニンングメニューの作成を定式化し，
+実際にPythonとGurobiを用いて解き，出力された解を実施して12月5日の試合にどのような影響を
+及ぼしたのかを検証する．トレーニングメニューについては，自身が実施したことのあるトレーニングメニューをまず準備し，シミュレーション等を
+通して検討した結果，4つに絞った．メニューの詳細は表\ 1のとおりである．
+\begin{longtable}{|c|c|c|c|}
+  \caption{実施するトレーニングメニュー}                                   \\
+  \hline
+  メニュー                         & トレーニング強度$(A)$ & 路面係数$(R)$ \\
+  \hline
+  速いジョグ                       & 1.0                   & 1.1           \\
+  \hline
+  遅いジョグ                       & 1.5                   & 1.1           \\
+  \hline
+  10000mペース走(ポイント練習)     & 3.5                   & 1.0           \\
+  \hline
+  $1000$m$ \times 5$(ポイント練習) & 8.0                   & 1.0           \\
+  \hline
+\end{longtable}
+天候係数については季節は冬なので全て1とする．
+表\ 1，(\ref{eq:w1})式を基に$w(t)$は以下のように定めた．
+\begin{eqnarray}
+  w(i)&=&(1.1x_{i1}+16.5x_{i2})D_{i}+35x_{i3}+36x_{i4}\label{eq:w3}
+\end{eqnarray}
+各項ランニング強度，距離，路面係数，天候係数とそのメニューを実施するか否かの変数の積になるが，
+10000mペース走，$1000$m$\times 5$の距離は$D_{i3}=10$，$D_{i4}=5$で固定し，速いジョグ$D_{i1}$と遅いジョグの距離$D_{i2}$の距離は1種類のメニューのみとしたため
+$D_{i1}=D_{i2}=D_i$と設定した．また，それぞれのポイント練習実施の回数，日付をあらかじめ指定した．
+具体的には10000mペース走を11月23日，11月27日に，1000m$\times$5は11月30日に行うことにしたので，
+$x_{3,3}=x_{7,3}=x_{10,4}=1$とした．
+定式化(\ref{eq:max})式$\sim$ (\ref{eq:w3})式を以下のように変更した．
+%\begin{eqnarray}
+%  \mathop{\rm MAXIMIZE}&\ \ &\sum_{i=1}^t \{(1.1x_{i1}+16.5x_{i2})D_{i}+35x_{i3}+40x_{i4}\}e^{\frac{-(t-i)}{45}}\label{eq:max1}\\%(10)
+%  \mathop{\rm subject\ to}&\ \ &\sum_{j=1}^4 x_{ij}\leq 1\label{eq:st12}\\%(11)
+%  &&8\leq D_{i} \leq 12\label{eq:st2}\\%(12)
+%  &&p(t)\geq -100\ \ (i=6,8,13)\label{eq:st32}\\%(13)
+%  &&\sum_{i=1}^n x_{i1}+x_{i2}\geq 5\label{eq:st42}\\%(14)
+%  &&\sum_{i=1}^n x_{i1}\geq 1\label{eq:st52}\\%(15)
+%  &&\sum_{i=1}^n x_{i4}=2\label{eq:st6}\\%(16)
+%  &&\sum_{i=1}^n x_{i7}=1\label{eq:st7}\\%(17)
+%  &&x_{i4}=1\ \ (i=2,6)\label{eq:st8}\\%(18)
+%  &&x_{i5}=1\ \ (i=9)\label{eq:st9}%(19)
+%\end{eqnarray}
+
+
+\begin{itemize}
+  \item (\ref{eq:st3})式をポイント練習の前日，もしくは当日に$-100$を下回らないようにするように設定した
+  \item ジョグの距離の範囲を8km$\sim$12kmに定めた
+  \item ジョグの実施回数を5回以上に定めた
+  \item 速いジョグの実施回数を1回以上に定めた
+
+\end{itemize}
+
+\subsection{結果}
+設定した条件から定義される最適化問題を解いた結果，出力されたメニューを表\ 2に示す．
+\begin{longtable}{|c|c|c|c|}
+  \caption{出力されたメニュー}                                   \\
+  \hline
+  日付     & メニュー       & 日付     & メニュー                \\
+  \hline
+  11月21日 & 12km速いジョグ & 11月28日 & 9km速いジョグ           \\
+  \hline
+  11月22日 & 12km速いジョグ & 11月29日 & 8km(9km)遅いジョグ      \\
+  \hline
+  11月23日 & 10000mペース走 & 11月30日 & 1000m$\times$5\         \\
+  \hline
+  11月24日 & 12km速いジョグ & 12月1日  & 10km遅い(9km速い)ジョグ \\
+  \hline
+  11月25日 & 11km遅いジョグ & 12月2日  & 10km(9km)遅いジョグ     \\
+  \hline
+  11月26日 & 休養           & 12月3日  & 休養                    \\
+  \hline
+  11月27日 & 10000mペース走 & 12月4日  & 試合                    \\
+  \hline
+\end{longtable}
+計算環境とプログラム計算計測時間を以下に示す．
+\begin{center}
+  \begin{multicols}{2}
+    \begin{description}
+      \item[OS$\cdots$Windows\ 11]
+      \item[CPU$\cdots$Intel\ Core\ i7\ (1.8GHz)]
+      \item[メモリ$\cdots$8.0GB]
+      \item[言語$\cdots$python\ 3.8.5]
+      \item[ソルバー$\cdots$Gurobi\ 9.5.2]
+      \item[ 実行時間(5回の平均)$\cdots$0.354s]
+    \end{description}
+  \end{multicols}
+\end{center}
+実施したメニューは定式化のミスがあり最終的に出力されたメニューとは若干違うものになってしまった．その差異を表\ 2のカッコ内で示している．
+試合に出場した結果，現在の自分の持っている力すべてを出し切ることができた．
+よってピーキングはあっていたとみなすことができる．一方では，走力があがったという感覚はあまりないと感じた．
+\subsection{考察}
+出力された結果はピーキングには非常に適したものだということが考えられる．
+定式化するうえでいろいろと試してみたが，ジョギングの距離やポイント練習の内容，日にち，その期間に実施する回数を
+指定しなければ，納得のいくメニュー構成を出力すことができなかった．そのため，定式化においては経験に基づくある程度の事前の決定は必要である．
+スポーツにおいて短期間で成長するものではないので$T=30$などといった大きな数字で実施するべきであり，それに応じて自分の
+レベルをシミュレーションなどといったことを通して知り，設定していくべきだと考えた．
+\section{まとめ}
+本研究では，パフォーマンスを低下させすぎずにフィットネスを向上させていくことを目標にしてきた．
+納得のいく解を得るは自分のレベルをシミュレーションを通じて知り，練習メニューの種類を絞り，
+内容をより細かく設定したうえで定式化することが大事である．
+また，結果とは若干違うメニュー構成の練習実施になったがピーキングにはあっていた．
+今後の課題としては走力を向上させる定式化を作成することであり，期間の増加，ジョグの距離の増加をする必要がありそれに応じて納得のいく
+メニュー構成が立てられるように制約式を考えていく必要がある．
+\begin{thebibliography}{99}
+  \bibitem{bani}Morton R.H.,Fitz-Clarke J.R. , and Banister E.W. (1990) Modeling human performance in running. J Appl Physiol. 69(3): 1171-1177.
+  \bibitem{fitfig}Banister E.W. (1991) Modeling elite athletic performance. In: Green H.J., McDugal J.D., and Wenger H. (ed). Physiological testing of elite athletes. Human Kinetics, Campaign IL. pp 403-424.
+  \bibitem{fitfig1}「フィットネスー疲労モデル」を用いたトレーニング刺激と生体応答のモニタリングとパフォーマンス予測，URL(https://system5-site-one.ssl-link.jp/sandcplanning/uploads/solution/20/5b14a2d1f169020.pdf),閲覧日2023年1月4日
+\end{thebibliography}
+\end{document}
