@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.5.1)  15 JAN 2023 00:27
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2020.5.1)  15 JAN 2023 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -358,20 +358,20 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 [1
 
 ] [2]
-Overfull \vbox (21.14635pt too high) has occurred while \output is active []
+Overfull \vbox (37.64635pt too high) has occurred while \output is active []
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 [] \JY1/mc/m/n/12 「 フ ィ ッ トネス ー疲労モデル 」 を用いたトレ ーニング刺激と生体応答の
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 \JY1/mc/m/n/12 モニタリングとパフ ォ ーマンス予測 ， \OT1/cmr/m/n/12 URL(https://system5-site-one.ssl-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 \OT1/cmr/m/n/12 link.jp/sandcplanning/uploads/solution/20/5b14a2d1f169020.pdf), \JY1/mc/m/n/12 閲覧日 \OT1/cmr/m/n/12 2023 \JY1/mc/m/n/12 年 \OT1/cmr/m/n/12 1
  []
 
@@ -385,4 +385,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  30i,7n,36p,322b,279s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 4619060_照永詩恩_池辺研究室.dvi (4 pages, 20676 bytes).
+Output written on 4619060_照永詩恩_池辺研究室.dvi (4 pages, 20992 bytes).
